@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url(apply.jpg);
+        background-repeat: no-repeat;
+        background-size: 1500px;
+        font-family: 'Pacifico', cursive;
+        /* height: 1000px; */
+        /* width: 1000px; */
+    }
+
+    .left {
+        background-color: gray;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: solid 3px;
+        display: inline-block;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+    }
+
+    .left img {
+        width: 110px;
+    }
+
+    .right {
+        background-color: gray;
+        border: black solid 3px;
+        border-radius: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .btn {
+        margin: 10px 9px;
+        font-size: 15px;
+        background-color: gray;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: 'Pacifico', cursive;
+    }
+
+    .btn:hover {
+        background: rgb(223, 220, 208);
+        border-radius: 20px;
+        color: black;
+    }
+
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+        border: black solid 3px;
+        border-radius: 30px;
+        background-color: gray;
+    }
+
+
+    .mid li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        list-style: none;
+        margin: 20px 30px;
+        padding: 7px 7px;
+        border-radius: 20px;
+    }
+
+    mid li a:active,
+    .mid li a:hover {
+        color: black;
+        /* text-decoration:underline; */
+        border: black solid 2px;
+        background-color: rgb(223, 220, 208);
+
+
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .container {
+        margin: 100px 90px;
+        /* font-size: 20px; */
+        width: 33%;
+        padding: 1px;
+        border: black solid 2px;
+        border-radius: 20px;
+        /* font-family: 'Pacifico', cursive; */
+        color: black;
+        background-color: gray;
+    }
+
+    .container h1 {
+        font-size: medium;
+        padding-left: 150px;
+    }
+    .formgroup:hover{
+        border: 2px solid black;
+        border-radius: 20px;
+        cursor: grabbing;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpg" alt="logo">
+            <div><strong>G.R.V.M.School</strong></div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="apply.html">Apply</a></li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call US Now</button>
+            <button class="btn">Email US</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN NOW !!!!</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                Enter Name : <input type="text" name="entername">
+            </div>
+            <div class="formgroup">
+                Cast:
+                <select name="cast">
+                    <option value="bca">BCA</option>
+                    <option value="bcb">BCB</option>
+                    <option value="general">General</option>
+                </select>
+
+            </div>
+            <div class="formgroup">
+                Enter Age : <input type="text" name="enterage">
+
+            </div>
+            <div class="formgroup">
+                Gander : <input type="radio" name="entegander">Girl
+                <input type="radio" name="entegander">Boy
+
+            </div>
+            <div class="formgroup">
+                Current Class : <input type="text" name="enterclass">
+
+            </div>
+            <div class="formgroup">
+                Attach Previous Class Marksheet :
+                <input type="file" name="choosefile">
+
+            </div>
+            <div class="formgroup">
+                Enter Email Address : <input type="email" name="enteremail">
+
+            </div>
+            <div class="formgroup">
+                Enter your interest :
+                <input type="checkbox" name="interest" value="cricket">Cricket
+                <input type="checkbox" name="interest" value="football">Football
+                <input type="checkbox" name="interest" value="hockey">hockey
+                <input type="checkbox" name="interest" value="ludo">ludo
+            </div>
+            <div class="formgroup">
+                <input type="reset" class="btn" name="reset" placeholder="Reset">
+                <input type="submit" class="btn" name="submit" placeholder="Submit">
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
